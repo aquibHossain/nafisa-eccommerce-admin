@@ -1,0 +1,57 @@
+input {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.new{
+
+    font-family: "Roboto", sans-serif;
+  
+}
+
+@media print {
+  @page {
+    size: auto;
+    margin: 0mm;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .invoice-container,
+  .invoice-container * {
+    visibility: visible;
+  }
+
+  .invoice-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .MuiModal-root {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .MuiModal-root .MuiBox-root {
+    box-shadow: none !important;
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
